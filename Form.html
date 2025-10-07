@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+    *<fieldset></fieldset>Fieldset will create a box
+    *<Legend></Legend>-this will add text to the fieldset box
+    *Shift+Alt+f-To format everything
+
+    
+    -->
+    <fieldset>
+        <center>
+            <legend>Personal Information</legend>
+        </center>
+        <h1>Registration and Feedback Form:</h1>
+        <form action="" method="post">
+            <label for="Fname">Firstname</label>
+            <input type="text" id="Fname" name="Fname" placeholder="Enter your Name" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="emial" name="email">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Strong password" required min="5"
+                maxlength="20">
+            <br>
+            <label for="dob">D.O.B:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <label for="Gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <label for="resume">Resume:</label>
+            <input type="file" name="resume" id="resume" accept=".pdf, .docx" required>
+    </fieldset>
+    <fieldset>
+        <legend>Preference and Intrest</legend>
+        <label for="Country">Country:</label>
+        <select name="Country" id="Country">
+            <option value="">Select your Country</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option> <br>
+            <p>Choose your Intrest:</p>
+            <input type="text">
+
+        </select>
+    </fieldset>
+    </form>
+</body>
+
+</html>
