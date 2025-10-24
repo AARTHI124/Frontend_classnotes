@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Float Image Beside Text</title>
+  <style>
+    /* This makes sure the box wraps around floated items */
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* This styles the image */
+    .thumb {
+      float: left;          /* Makes the image move to the left side */
+      width: 150px;         /* Sets how wide the image is */
+      margin: 10px 15px 10px 0; /* Adds space around it so text doesn’t touch it */
+    }
+
+    /* This styles the main container */
+    .container {
+      max-width: 600px;     /* Keeps the box from getting too wide */
+      border: 2px solid #444; /* Adds a border to see the box clearly */
+      padding: 10px;        /* Adds space inside the box */
+      background-color: #f0f8ff; /* Light background color */
+    }
+  </style>
+</head>
+<body>
+  <div class="container clearfix">
+    <img src="nature.jpg" alt="Cute Puppy" class="thumb">
+    <p>
+      This is my cute puppy! 🐶  
+      He loves to play, run, and jump all around the garden.  
+      When he’s tired, he sleeps next to me while I do my homework.  
+      Isn’t he adorable?
+    </p>
+  </div>
+</body>
+</html>
