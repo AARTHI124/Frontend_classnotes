@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text1" onkeyup="change()">
+    <button onclick="">asd</button>
+     <h1 id="newcontent"></h1>
+    <script>
+        let text1=document.getElementById("text1")
+        let newcontent=document.getElementById("newcontent")
+        function change(){
+            newcontent.textContent=text1.value
+        }
+    </script>
+</body>
+</html>
