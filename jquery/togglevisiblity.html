@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <button id="tbtn">Toggele Button</button>
+    <br>
+    <div id="box1" style="width: 100px; height: 100px; background-color: blueviolet;"></div>
+    <button id="cbtn">Change Text</button>
+    <p id="message">welcome to Jquery</p>
+    <button id="fadebtn">Fade Out</button>
+    <div id="box2" style="width: 100px; height: 100px; background-color: rgb(214, 133, 194);"></div>
+    <button id="btn">Fade In</button>
+    <div id="box" style="width:100px; height:100px; background:red; display:none;"></div>
+    <script>
+        $('#tbtn').click(function () {
+            $('#box1').toggle(5000);
+        });
+        $('#cbtn').click(function () {
+            $('#message').text("You have changed the text").css("color", "red")
+        });
+        $('#fadebtn').click(function () {
+            $('#box2').fadeOut(1000)
+        });
+        $("#btn").click(function () {
+            $("#box").fadeIn(1000); // 1000ms = 1 second
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fade In and Out</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <button id="btn">Fade In / Out</button>
+  <div id="box" style="width:100px; height:100px; background:blue; display:none;"></div>
+
+  <script>
+    $("#btn").click(function(){
+      $("#box").fadeToggle(1000); // toggles fade in and fade out
+    });
+  </script>
+</body>
+</html>
